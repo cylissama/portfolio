@@ -4,14 +4,14 @@ const COLORS = { o: "#e8590c", s: "#4d565e", g: "#1d2125", l: "#7d8790" };
 type Box = [label: string, color: keyof typeof COLORS];
 
 const STACKS: Box[][] = [
-  [["postgres", "s"], ["mosquitto", "o"], ["fastapi", "g"]],
+  [["pgadmin", "s"], ["mosquitto", "o"], ["fastapi", "g"]],
   [["pgadmin", "l"], ["compose", "s"]],
-  [["swarm", "o"], ["imu_edge", "g"], ["camera_edge", "s"], ["backup", "l"]],
-  [["alpine", "g"], ["volumes", "s"]],
-  [["dashboard", "s"], ["mqtt", "o"]],
-  [["ntp", "g"], ["api", "s"], ["build", "l"]],
+  [["swarm", "o"], ["edge compute", "g"], ["stack", "s"], ["Sparkplug B", "l"]],
+  [["alpine", "g"], ["unix", "s"]],
+  [["fastapi", "s"], ["mqtt", "o"]],
+  [["ntp", "g"], ["UDP", "s"], ["build", "l"]],
   [["registry", "o"], ["deploy", "s"]],
-  [["compose", "o"], ["network", "g"], ["postgres", "l"]],
+  [["compose", "o"], ["networks", "g"], ["postgres", "l"]],
 ];
 
 const W = 160, H = 56, PITCH = 175, GROUND = 700;

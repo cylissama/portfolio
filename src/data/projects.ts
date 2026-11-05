@@ -18,19 +18,21 @@ export const projects: Project[] = [
   {
     title: "WKU SMR Lab Middleware",
     summary: "Middleware for moving data around the Smart Manufacturing Research Laboratory at WKU.",
-    tags: ["Python", "Docker", "MQTT", "FastAPI", "PostgreSQL"],
+    tags: ["Python", "Docker", "MQTT", "FastAPI", "PostgreSQL", "IIot/IoT", "Middleware"],
     repo: "https://github.com/cylissama/wku-smr-lab-middleware",
     video: "/projects/wku-smr-lab-middleware/demo.mp4",
     images: [
       "/projects/wku-smr-lab-middleware/lab-landscape.png", // system landscape
       "/projects/wku-smr-lab-middleware/edge-nodes.png", // edge node detail
     ],
+    details: [],
   },
   {
     title: "Alien Probe",
     summary: "Android app interface for an Alien RFID reader.",
-    tags: ["Java", "Android", "RFID / IoT"],
+    tags: ["Java", "Android", "IIoT/IoT", "RFID", "Kotlin"],
     repo: "https://github.com/cylissama/Alien-Probe",
     url: "https://cylissama.github.io/Alien-Probe/",
+    details: [],
   },
 ];

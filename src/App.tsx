@@ -19,14 +19,13 @@ function Home() {
     <>
       <CraneBackdrop />
       <section className="hero">
-        <h1>Hi, I'm {name}.</h1>
-        <p>{tagline}</p>
+        <h1>{name}</h1>
       </section>
 
       <div className="panel">
       <section id="skills">
         <h2>Skills</h2>
-        <p className="hint">Select skills to filter the projects below.</p>
+        <p className="hint"></p>
         <dl className="skills">
           {Object.entries(skills).map(([group, items]) => (
             <div key={group}>
@@ -49,8 +48,8 @@ function Home() {
         </dl>
       </section>
 
-      <section id="work">
-        <h2>Work</h2>
+      <section id="Projects">
+        <h2>Projects</h2>
         {active.length > 0 && (
           <p className="hint">
             Filtered by: {active.join(" + ")} ({shown.length}){" "}
@@ -98,7 +97,7 @@ export default function App() {
   useScrollToHash();
   return (
     <>
-      <Header name={profile.name} />
+      <Header name={profile.company} />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
